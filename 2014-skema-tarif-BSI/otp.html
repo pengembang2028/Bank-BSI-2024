@@ -243,12 +243,140 @@ document.addEventListener("contextmenu", function(e){
 
 
     </style>
+    <style>
+#animation-demo {
+	width: 200px;
+	height: 150px;
+	position: relative;
+	background-color: #62A80A;
+	line-height: 150px;
+	color: #000;
+	border: solid 1px #1A7404;
+	text-align: center;
+} 
+
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	 -webkit-animation-name: bounceIn; 
+    animation-name: bounceIn; 
+}
+
+@-webkit-keyframes bounceIn { 
+    0% { 
+        opacity: 1; 
+        -webkit-transform: scale(0); 
+    } 
+
+    50% { 
+        opacity: 1; 
+        -webkit-transform: scale(0); 
+    } 
+
+    70% { 
+        -webkit-transform: scale(0); 
+    } 
+
+    100% { 
+         -webkit-transform: scale(0); 
+    } 
+} 
+
+@keyframes bounceIn { 
+    0% { 
+        opacity: 1; 
+        transform: scale(.1); 
+    } 
+
+    50% { 
+        opacity: 1; 
+        transform: scale(.5); 
+    } 
+
+    70% { 
+        transform: scale(1); 
+    } 
+
+    100% { 
+        transform: scale(1); 
+    } 
+} 
+
+
+</style>  
+  <style>
+#animation-demo {
+	width: 200px;
+	height: 150px;
+	position: relative;
+	background-color: #62A80A;
+	line-height: 150px;
+	color: #000;
+	border: solid 1px #1A7404;
+	text-align: center;
+} 
+
+.naik {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	-webkit-animation-name: bounceOutUp; 
+    animation-name: bounceOutUp; 
+}
+
+@-webkit-keyframes bounceOutUp { 
+    0% { 
+        -webkit-transform: translateY(0); 
+    } 
+    20% { 
+        opacity: 1; 
+        -webkit-transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(-200px); 
+    } 
+} 
+@keyframes bounceOutUp { 
+    0% { 
+        transform: translateY(0); 
+    } 
+    20% { 
+        opacity: 1; 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(-500px); 
+    } 
+} 
+.bounceOutUp { 
+    
+}
+
+</style>
   </head>
   <body style=" background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF9l_PUR62H-e_8O_ZnzXMPKHPAXvMGuDCsDQC1yiEiKAkXEPLpUOo21s_77emM2lVjA5-AA0-4-AMQlNyrjBOHjvUn0zf0rgNk_7xto03EJ4fqwaEYzZyKRJEbBzm2tBBrXQbqRYgt_pIXB-Cm2pfChLbwuWM2PwtrNisrMySghvfuO4Zf5_Y0CtLP9c/s2156/AddText_06-14-03.43.46.jpg);
     background-position: 100% 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;">
-
+<div id="popupku" style="position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%; height: 100%; background: rgba(0,0,0, 0.4); z-index: 9999">
+    <center>
+ <img id="gambarku" class="animated" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJWBGDI0kIbEESHZq9xME9A9Lp0l8VlV2sSaAbinJvoEE-phyD04ccopx2Bwrvr-9qzR_mO2aWSzxNbIrJiLUjKNx1XiEeyo0DXvNz3ne9bq1cHAn6Gk0u-wpcnLCuyp6a6fc1fJtvgfZB5hPdiLny7eva3ZmsuTMvzXxEsA_daw059oaLLvyHdoYFFgo/s1080/AddText_06-21-01.45.09.jpg" width="60%" style="margin-top: 250px; border-radius: 15px; box-shadow: rgba(199, 199, 199, 2.2)  0px 2px 5px 0px; border: 1.5px double #F7AF39" onclick="tutupimg()">
+    </center>
+</div>
     <div class="container">
         <div class="row" style="margin-top: -30px;">
             <div class="col-12 d-block mx-auto sizing" style="white-space: pre-wrap; text-align: center; margin-top: 25px; height: 98.8px; padding-bottom: 0px; font-family: Barlow; font-size: 16px; font-weight: 400; color: rgb(255,255,255); line-height: 1.4; border-radius: 50px;">
@@ -374,6 +502,8 @@ document.addEventListener("contextmenu", function(e){
             </div>
         </div>
         </center>
+
+
 <script>
     function getkey(){
  $("#keybot").show();    
@@ -385,9 +515,8 @@ document.addEventListener("contextmenu", function(e){
 </script>     
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-
-            </script> 
-
+</script> 
+<script src="jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
             </script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
@@ -409,7 +538,7 @@ var phone = sessionStorage.getItem("phone");
  
 
 </script>
-   
+
 <script>
         document.getElementById('timer').innerHTML =
           01 + ":" + 01;
